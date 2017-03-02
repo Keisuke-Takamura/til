@@ -19,3 +19,11 @@ window.onpageshow = function(event) {
   }
 };
 ```
+  
+## 2017/03/02  
+### スマホ（Safari、Chrome）でスクロールしたときにresizeイベントが発生する  
+ブラウザのヘッダバーがスクロールしたときに収縮するため、それにresizeイベントが反応している。  
+スマホでリサイズするときは端末を縦か横にしたときだけなので、`orientationchange` を使用する。  
+> **orientationchange**  
+スマホの端末の向きが変わったときに発生するイベント
+  
