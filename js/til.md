@@ -27,3 +27,9 @@ window.onpageshow = function(event) {
 > **orientationchange**  
 スマホの端末の向きが変わったときに発生するイベント
   
+## 2017/03/03  
+### JSやCSSファイルにキャッシュを残さない方法  
+ファイルの末尾にクエリを付与することで、読み込むごとにクエリが変更するのでキャッシュが残らない  
+```
+<script src="./jquery.js?v=xxxxx"></script>
+```
