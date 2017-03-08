@@ -33,3 +33,10 @@ window.onpageshow = function(event) {
 ```
 <script src="./jquery.js?v=xxxxx"></script>
 ```
+
+  
+## 2017/03/07
+### orientationchangeのブラウザごとで実行タイミングが違う件  
+Androidの場合、orientationchangeイベントの実行タイミングがブラウザごとに違う。  
+中には画面の向きが変わったのに、イベントが発火していないこともあり、幅を取得したい場合などに意図しない値が返っている場合もある。  
+綺麗な形ではないがsetTimeoutで300msほど実行タイミングを遅延させることで、確実に端末の向きが変わった後に発火させることができる。  
